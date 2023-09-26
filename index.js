@@ -17,6 +17,24 @@ app.get('/header', (req, res, next) => {
   res.sendfile("assets/header.json");
 });
 
+app.get('/work-experience', (req, res, next) => {
+	res.sendfile("assets/work-experience.json");
+  });
+
+  app.get('/skills', (req, res, next) => {
+	res.sendfile("assets/skills.json");
+  });
+
+  app.get('/achievements', (req, res, next) => {
+	res.sendfile("assets/achievements.json");
+  });
+
+  app.get('/interest', (req, res, next) => {
+    res.sendfile("assets/interest.json");
+    });
+  
+
+
 app.listen(port,  () => 
 	console.log('listening on port ' + port
 ));
